@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "poppins-regular";
+}
+
+/* starten bakgrunnsfarge */
+.test2 {
+  background-color: greenyellow;
+}
+
+/* boks som video ligger i, samt felt ved siden av video*/
+.videoBox {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+}
+
+/* Video */
+#video {
+  width: 80vw;
+  height: auto;
+}
+
+/* Boks som holder headline og download knapp */
+.sideBox {
+  display: inline-block;
+
+
+
+  margin-top: 10%;
+  width: 100%;
+}
+
+/* boks der download knapp ligger */
+#downloadBox {
+  /* display: inline; */
+
+  /*  position: relative;
+ margin: auto; 
+  padding-bottom: 10%; */
+  
+
+  width: 100%;
+
+  background-color: red;
+
+}
+
+/* download knapp */
+#download {
+  border-color: #003324;
+  border-radius: 50px;
+  border-style: solid;
+  border: 15px;
+  background-color: black;
+  color: black;
+  font-family: "poppins-extra-light";
+  font-size: 0.75rem;
+  /* display: block; */
+  /* margin-top: 20%; */
+margin-left: 35%;
+margin-right: ;
+
+
+  position: sticky;
+  top: 5%;
+
+  z-index: 100;
+
+  padding: 0 2% 0 2%;
+}
+
+/* Boks som headline ligger i */
+#headlineBox {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+ 
+  /* height: fit-content; */
+  color: black;
+  margin-bottom: 10%;
+
+position: sticky;
+
+  /* background-color: indianred; */
+  font-size: 2rem;
+  
+  
+}
+
+/* class som legges til i download ved scroll */
+.headlinebox {
+  animation-name: shift;
+  animation-duration: 1500ms;
+  animation-timing-function: ;
+  /* animation-delay: 3s; */
+  animation-iteration-count: ;
+  animation-direction: ;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shift{
+  0% {
+
+  }
+  100% { 
+    background-color: #003324;
+    color: white;
+  }
+}
+
+/* overskrift */
+#headline1 {
+  font-family: "poppins-regular";
+
+padding-top: 20%;
+  width: fit-content;
+  margin: auto;
+  /* padding-right: 10%; */
+
+ 
+}
+
+#headline2 {
+  font-family: "poppins-regular";
+
+padding-bottom: 10%;
+  width: fit-content;
+  margin: auto; 
+  /* padding-left: 15%; */
+}
+
+/* images */
+.images {
+    display: flex;
+    justify-content: center;
+  margin-top: 12%;
+  
+}
+
+#wireframes {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -30%;
+z-index: 120;
+  position: sticky;
+  justify-content: center;
+
+  background-color:  #E5FFDF;
+}
+
+#bildebakgrunn {
+  width: 100%;
+  height: auto;
+  z-index: -5;
+
+  position: fixed;
+  top: -150%;
+}
+
+#bildeskjermer {
+width: 100%;
+height: 100%;
+
+
+background-color: red;
+display: inline-block;
+}
+
+
+.skjermeranimasjon{
+  width: 100%;
+  /* height: 100%; */
+  justify-content: center;
+  
+  animation-name: phone;
+  animation-duration: 3s;
+  animation-timing-function: ;
+  /* animation-delay: 3s; */
+  animation-iteration-count: ;
+  animation-direction: ;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+
+}
+
+@keyframes phone {
+  0% {
+    margin-top: 130%;
+   
+  }
+  100% {
+    margin-top: 10%;
+   margin-bottom: 10%;
+  }
+}
+
+/* denne blir lagt til i elementet ved scroll*/
+
+.test {
+  background-color: #E5FFDF;
+
+  animation: smooth 2s;
+}
+
+@keyframes smooth {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: #E5FFDF;
+  }
+}
+
+body {
+  background-color:  black;
+}
