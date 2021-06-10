@@ -19,7 +19,7 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
-
+margin-bottom: 10%;
 }
 
 /* Video */
@@ -32,11 +32,10 @@
 .sideBox {
   display: inline-block;
 
-
-
   margin-top: 10%;
   width: 100%;
 }
+
 
 /* boks der download knapp ligger */
 #downloadBox {
@@ -53,6 +52,21 @@
 
 }
 
+
+/* download knapp ligger i denne boksen */
+
+.downloadBox {
+  display: flex;
+ 
+  width: 100%;
+  justify-content: center;
+
+  position: sticky;
+  top: 15%;
+
+}
+
+
 /* download knapp */
 #download {
   border-color: #003324;
@@ -62,15 +76,13 @@
   background-color: black;
   color: black;
   font-family: "poppins-extra-light";
-  font-size: 0.75rem;
+  font-size: 30px;
   /* display: block; */
   /* margin-top: 20%; */
-margin-left: 35%;
-margin-right: ;
+ 
 
 
-  position: sticky;
-  top: 5%;
+
 
   z-index: 100;
 
@@ -90,21 +102,41 @@ margin-right: ;
 position: sticky;
 
   /* background-color: indianred; */
+  font-size: 3rem;
+  
+  
+}
+#headlineBox2 {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+ 
+  color: black;
+  margin-bottom: 10%;
+
+  position: sticky;
+ 
   font-size: 2rem;
-  
-  
+}
+
+#headline3 {
+    font-family: "poppins-regular";
+
+    padding-top: 5%;
+    width: 70%;
+    margin: auto;
 }
 
 /* class som legges til i download ved scroll */
 .headlinebox {
-  animation-name: shift;
-  animation-duration: 1500ms;
-  animation-timing-function: ;
-  /* animation-delay: 3s; */
-  animation-iteration-count: ;
-  animation-direction: ;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+    animation-name: shift;
+    animation-duration: 1500ms;
+    animation-timing-function: ;
+    /* animation-delay: 3s; */
+    animation-iteration-count: ;
+    animation-direction: ;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 @keyframes shift{
